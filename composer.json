@@ -1,7 +1,7 @@
 {
     "name": "wasnaker/wasnaker_config",
     "description": "Module LHP untuk aplikasi wasnaker",
-    "type": "library",
+    "type": "codeigniter-third-party",
     "minimum-stability": "dev",
     "homepage": "https://github.com/wasnaker/wasnaker_config",
     "license": "MIT",
