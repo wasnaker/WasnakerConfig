@@ -1,0 +1,50 @@
+{
+    "name": "wasnaker/wasnaker_config",
+    "description": "Module LHP untuk aplikasi wasnaker",
+    "type": "library",
+    "minimum-stability": "dev",
+    "homepage": "https://github.com/wasnaker/wasnaker_config",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Luky A Rizal",
+            "email": "lar290172@gmail.com",
+            "homepage": "https://github.com/wasnaker",
+            "role": "Owner"
+        }
+    ],
+    "repositories": [
+        {
+            "name": "wasnaker/wasnaker_config",
+            "type": "vcs",
+            "url": "git@github.com:wasnaker/wasnaker_config.git"
+        }
+    ],
+    "config": {
+        "vendor-dir": "vendor"
+    },
+    "autoload": {
+        "psr-4": {
+            "Wasnaker\\WasnakerConfig\\": "src/"
+        }
+    },
+    "require": {
+        "oomphinc/composer-installers-extender": "^2.0"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "Wasnaker\\WasnakerConfig\\Installer::postInstall"
+        ],
+        "post-update-cmd": [
+            "Wasnaker\\WasnakerConfig\\Installer::postUpdate"
+        ]
+    },
+    "extra": {
+        "installer-paths": {
+            "application/third-party/": ["type:codeigniter-third-party"]
+        },
+        "branch-alias": {
+            "dev-main": "1.0.x-dev"
+        }
+    }
+}
